@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--this html file is for the landing page of the portfolio website-->
+<html lang="en">
+   <head>
+      <title>Sophie Furlow's Portfolio</title>
+      <!--import the css style sheets as well as icon libraries from google and fontawesome-->
+      <link rel="stylesheet" href="portfolio.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+      <script src="https://kit.fontawesome.com/205d0fad15.js" crossorigin="anonymous"></script>
+      <meta charset="utf-8">
+      <title>Landing Page</title>
+   </head>
+   <body>
+       <!--tab order is logical, so tabindex is not necessary-->
+       <nav role=navigation class="top-nav"> <!--navigation bar for all pages-->
+           <img class="headbar-logo" src="mylogo.png" alt="Small SF logo, turquoise on dark blue background">
+           <h1>Sophie Furlow's Portfolio</h1>
+           <ul>
+               <li nav aria-current=page>Projects</li>
+               <a href="about.html" role="button">
+                    <li>About Me</li>
+                </a>
+                <a href="contact.html" role="button">
+                    <li>Contact</li>
+                </a>
+           </ul>
+
+       </nav>
+       <div class="welcome"> 
+            <h1>Welcome</h1>
+            <p>My name's Sophie, and I'm a student at Northwestern University. </p>
+            <p>Scroll to take a look at my project portfolio.</p>
+        </div>
+       <main>  
+           <div class="portfolio-list"> <!--list of projects separated into subject sections-->
+            <!--each project card links to a project page with further description-->
+                <h1 class="subj">Computer Science <i class="fa-solid fa-network-wired"></i></h1>            
+                <div class="section">
+                    <a href="mapplanner.html">
+                    <div class="project" role="button">
+                        <h1>Map Planner</h1>
+                        <p>I used a variety of graph search methods and data structures to write an algorithm
+                        that returns shortest routes and nearby locations from given map data.
+                        </p>
+                    </div> 
+                    </a>
+                    <a href="baseball.html">
+                    <div class="project" role="button">
+                        <h1>Baseball vs Weather</h1>
+                        <p>I scraped weather data from the National Weather Service Site to analyze relationships between specific
+                        outcomes of a baseball game and varying weather patterns.</p>
+                    </div>
+                    </a>
+                    <a href="ipodproj.html" role="button">
+                    <div class="project" role="button">
+                        <h1>iPod Player</h1>
+                        <p>Using HTML, CSS, and JavaScript, I built a functional iPod player for a class assignment.</p>
+                    </div>
+                    </a>     
+            </div> <!--end of Computer Science section-->
+                <h1 class="subj">Biology <i class="fa-solid fa-dna"></i></h1>
+                <div class="section">
+                    <a href="compbio.html" role="button">
+                    <div class="project" role="button">
+                        <h1>Therapeutics Outcomes</h1>
+                        <p>This research project in computational biology examined immunogenicity outcomes from Adalimumab using cluster analysis and Bayesian network analysis.</p>
+                    </div>
+                    </a>       
+                    <a href="quantbio.html" role="button">
+                    <div class="project" role="button">
+                        <h1>Yeast Transcription</h1>
+                        <p>This research project in quantitative biology examined transcriptional responses to environmental stress in yeast.</p>
+                    </div>
+                    </a>
+                    <a href="machinelearn.html">
+                    <div class="project" role="button">
+                        <h1>ML and Alzheimer's</h1>
+                        <p>This is a review of machine learning methods used for early Alzheimer's diagnosis.</p>
+                    </div>
+                    </a>    
+            </div> <!--end of Biology subject-->
+                <h1 class="subj">Art and Design <i class="fa-solid fa-brush"></i></h1>
+                <div class="section">
+                    <a href="coloring.html">
+                    <div class="project" role="button">
+                        <h1>Coloring book</h1>
+                        <p>Inspired by an Intro to Drawing course, I handrew a coloring book showcasing colorable scenes from Northwestern's campus.</p>
+                    </div> 
+                    </a>
+                    <a href="design.html">
+                    <div class="project" role="button">
+                        <h1>Closet Design</h1>
+                        <p>In a team of students, I developed a prototype of a newly customizable organization
+                        system that suited the needs and requirements of our users at Esperanza Community Services.</p>
+                    </div>
+                    </a>       
+                </div>
+           </div> <!--end of Art and Design subject-->
+
+       </main>
+       <!--outside the main content of the page, create a spacer for 
+            visual negative space at the end of the page and a footer 
+            that will be constant on all pages of the website-->
+       <div class="spacer"></div>
+        <div class="footer">Sophie Furlow, Northwestern University 2023</div>
+
+   </body>

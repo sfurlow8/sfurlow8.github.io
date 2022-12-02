@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Sophie Furlow's Portfolio</title>
+      <link rel="stylesheet" href="portfolio.css">
+      <link rel="stylesheet" href="ipod.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <meta charset="utf-8">
+      <title>iPod project</title>
+   </head>
+   <body>
+    <nav role=navigation class="top-nav">
+        <img class="headbar-logo" src="mylogo.png" alt="Small SF logo, turquoise on dark blue background">
+        <h1>Sophie Furlow's Portfolio</h1>
+        <ul>
+            <a href="index.html" role="button">
+                <li nav aria-current=page>Projects</li>
+            </a>   
+            <a href="about.html">
+                <li>About Me</li>
+            </a>
+            <a href="contact.html">
+            <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+
+    <!--every project page follows the template:
+            project-block, project-title, project-desc, [additional content], project-button-->
+       
+    <main class="project-block">
+        <h1 class="project-title">iPod Player</h1>
+        <!--project description includes a link to open the iPod player in a new tab-->
+        <p class="project-desc">This project uses HTML, CSS, and JavaScript to create a fictional
+            iPod interface in your web browser. The iPod player is interactive, and the user can 
+            click through albums and songs, as well as operate the player. Images of the iPod can 
+            be seen below, and you can open the interactive  
+            <a href="ipod-folder/albums.html" target="_blank">iPod</a> in a new tab.
+        </p>
+        <div class="ipod-imgs">
+            <img src="albumimg.png" alt="Four iPod albums">
+            <img src="songimg.png" alt="Songs on Tame Impala album">
+            <img src="playerimg.png" alt="iPod playing Currents">
+        </div>
+        <div class="project-button">
+             <a href="index.html" role="button">
+                 <p class="go-to">back to projects</p>
+             </a>
+         </div>
+    </main>
+
+    <div class="spacer"></div>
+    <div class="footer">Sophie Furlow, Northwestern University 2023</div>
+
+   </body>

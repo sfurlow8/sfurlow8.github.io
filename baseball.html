@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Sophie Furlow's Portfolio</title>
+      <link rel="stylesheet" href="portfolio.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      rel="stylesheet">
+      <script src="https://kit.fontawesome.com/205d0fad15.js" crossorigin="anonymous"></script>
+      <meta charset="utf-8">
+      <title>Baseball Weather</title>
+   </head>
+   <body>
+       <nav role=navigation class="top-nav">
+           <img class="headbar-logo" src="mylogo.png" alt="Small SF logo, turquoise on dark blue background">
+           <h1>Sophie Furlow's Portfolio</h1>
+           <ul>
+               <a href="index.html">
+                    <li nav aria-current=page>Projects</li>
+                </a>
+               <a href="about.html" role="button">
+                <li>About Me</li>
+                </a>
+                <a href="contact.html">
+               <li>Contact</li>
+            </a>
+           </ul>
+       </nav>
+
+       <!--every project page follows the template:
+            project-block, project-title, project-desc, [additional content], project-button-->
+       
+        <main class="project-block">
+           <h1 class="project-title">Baseball and the Weather</h1>
+           <p class="project-desc">In a data engineering course (DE200), we wanted to see if we could find any 
+               interesting relationships between weather factors and pertinent outcomes of baseball games. We found
+               a relevant dataset containing game statistics from several thousand MLB games, and scraped weather data from
+               the National Weather Service site that corresponded with the dates of our games of interest. We examined factors
+               like wind and temperature and their possible effects on game outcomes like number of runs and hits by each of the 
+               home and visiting teams. Click to download our <a href="baseball-files.zip" download>datasets</a>, 
+               and click through the slides below to view some of our results. 
+           </p>
+           <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRzIx_F1_1D2j4z8B2nVbmb5l-R1I4Uuw2D5w3kQ8T2idG990IQfyu_qKauMok752e7m9JVa1wEBMDL/embed?start=true&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+           <div class="project-button">
+                <a href="index.html" role="button">
+                    <p class="go-to">back to projects</p>
+                </a>
+            </div>
+       </main>
+       
+        <div class="spacer"></div>
+        <div class="footer">Sophie Furlow, Northwestern University 2023</div>
+
+   </body>
