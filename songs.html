@@ -1,0 +1,47 @@
+<!--this file creates the ipod song page showing an 
+    album linked from the albums page and its songs-->
+    <html>
+        <head>
+            <title>Song Select</title>
+            <link rel="stylesheet" type="text/css" href="ipod.css"/>
+        </head>
+        <body>
+            <div id="screen">
+                  <div class="head-bar">
+                        <h1></h1> <!---headbar has no text, only the back-button-->
+                        <a href="albums.html" tabindex="1" role="button">
+                            <p class="back-button">&larr;</p>
+                        </a>
+                  </div>
+                  <div class="songs-info-wrapper"> <!--songs wrapper holds the selected album art with its corresponding info-->
+                        <img class="songs-album-art" src="images/currents.jpg" alt=""> <!--empty alt tag since the image's accompanying text provides the necessary information -->
+                        <div class="songs-text-info">
+                            <h1 class="songs-album-name">Currents</h1>
+                            <p class="songs-album-artist">Tame Impala</p>
+                            <p class="songs-album-year">2015</p>
+                        </div>         
+                  </div>
+                  <nav aria-labelledby="songs-menu"> <!--use nav divider for menu of songs on the album, label to make it easier to find-->
+                    <ol class="songs-list"> <!--ordered list of 10 songs on the album-->
+                        <li>Let it Happen</li>
+                        <li>Nangs</li>
+                        <li>The Moment</li>
+                        <li>Yes I'm Changing</li>
+                        <li>Eventually</li>
+                        <li>Gossip</li>
+                        <a href="player.html" tabindex="2" role="button">
+                            <li>The Less I Know the Better</li>
+                        </a>
+                        <li>Past Life</li>
+                        <li>Disciples</li>
+                        <li>'Cause I'm a Man</li>
+                    </ol>
+                </nav>
+            </div>
+       </body>
+    </html>
+    <!-- 
+    * bg iphone img is 363x762px
+    * iphone 'screen' is apprx 300x530 -->
+    
+    
