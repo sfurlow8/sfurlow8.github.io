@@ -1,0 +1,43 @@
+
+
+.socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 10px; /* Adjust spacing between icons */
+}
+
+.socials li:last-child {
+    margin-right: 0; /* Remove margin from the last icon */
+}
+
+.socials a {
+    text-decoration: none;
+    color: #461767; /* Default color */
+    font-size: 24px; /* Default size */
+}
+
+.socials a:hover {
+    color: #461767; /* Change color on hover */
+    opacity: 0.5;
+}
+
+.socials a:active {
+    color: #461767;
+    opacity: 0.5;
+}
+
+h1 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Fira Code', monospace;
+    background-color: #f4f3ef;
+    font-weight: 300;
+}
