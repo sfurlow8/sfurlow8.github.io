@@ -18,7 +18,7 @@
 .socials a {
     text-decoration: none;
     color: #461767; /* Default color */
-    font-size: 24px; /* Default size */
+    font-size: 35px; /* Default size */
 }
 
 .socials a:hover {
@@ -34,10 +34,140 @@
 h1 {
     font-family: 'Fira Code', monospace;
     font-weight: 700;
+    color: #461767;
+    font-size: 50px;
+    margin-bottom: 2px;
+}
+
+h2 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 600;
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 2px;
 }
 
 body {
     font-family: 'Fira Code', monospace;
     background-color: #f4f3ef;
     font-weight: 300;
+    padding: 50px;
+}
+
+/* .container {
+    display: flex;
+} */
+
+nav {
+    position: fixed;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 200px; /* Set width for the side navigation */
+    margin-left: 250px; /* Width of sidebar + margin */
+}
+
+nav a {
+    color: #461767;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+/* section {
+    margin-bottom: 30px;
+} */
+.section {
+    display: none;
+}
+
+.section h3 {
+    color: #461767;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.section h2 {
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.section h4 {
+    color: black;
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu {
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    margin-left: 250px; /* Width of sidebar + margin */
+
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    font-weight: 400;
+    color: #461767;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #ece7ef;
+    /* color: #461767; */
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 200px;
+    height: 200px; /* Ensure equal width and height */
+    object-fit: cover; /* Prevent image distortion */
+    border-radius: 50%; /* Makes the image circular */
+    margin-top: 20px;
+    margin-bottom: 5px;
+    outline: 5px solid #461767;
+    /*box-shadow: 5px 5px 0px #461767; */ /* Solid offset shadow */
+}
+
+.main-content {
+    margin-left: 250px; /* Width of sidebar + margin */
+    padding: 20px;
+}
+
+/* p {
+    margin-bottom: 100px;
+} */
+
+.conc {
+    margin-bottom: 100px;
 }
