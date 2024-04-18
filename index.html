@@ -144,7 +144,7 @@
 
       <div class="modal-container" id="modal-container-coma">
         <div class="modal">
-          <button id="close-coma">x</button>
+          <button id="close-coma" style="float: right;">x</button>
           <h1>Predicting Coma Recovery with Machine Learning of Multimodal Data</h1>
           <h2>UC Berkeley and UC San Francisco, 2023-2024</h2>
           <div class="container">
@@ -160,13 +160,13 @@
           </div>
 
           <p><a href="https://github.com/sfurlow8/NLP-of-Medical-Notes" target="_blank">Github</a></p>
-          <p><a href="">Project Brief</a></p>
+          <p><a href="images/brief.pdf" target="_blank">Project brief</a></p>
         </div>
       </div>
 
       <div class="modal-container" id="modal-container-yeast">
         <div class="modal">
-          <button id="close-yeast">x</button>
+          <button id="close-yeast" style="float: right;">x</button>
           <h1>Transcriptional Analysis of Stress Responses in Yeast</h1>
           <h2>Northwestern University and NSF Simons Center for Quantitative Biology, 2021</h2>
           <p>The goal of the project was to investigate multi-kinase control of environmental stress responsive
@@ -186,7 +186,7 @@
 
       <div class="modal-container" id="modal-container-pd">
         <div class="modal">
-          <button id="close-pd">x</button>
+          <button id="close-pd" style="float: right;">x</button>
           <h1>At-Home Screening for Parkinson's Disease</h1>
           <h2>UC Berkeley, 2024</h2>
           <div class="container">
@@ -208,21 +208,33 @@
 
   <div class="modal-container" id="modal-container-dataeng">
     <div class="modal">
-      <button id="close-dataeng">x</button>
+      <button id="close-dataeng" style="float: right;">x</button>
       <h1>Data Engineering Pipeline Design</h1>
       <h2>Northwestern University, 2023</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cupiditate ad quibusdam? Optio animi, ipsum illo
-        impedit officia dicta, voluptatum tempora nobis sint eum velit vitae! Vitae, libero quo. Soluta!</p>
-      <img src="images/dag.jpg" alt="pdscreen" id="dag_img">
+      <p>I completed this project with one team member in order to become comfortable with the ETL workflow using
+        PostgreSQL in AWS.
+        We set up a pipeline in Airflow that took webscraped information and a dataset of patients' cardiovascular
+        symptoms and performed processing and feature engineering using PySpark and MapReduce.
+        The processed data was fed into a Logistic Regression, Random Forest, and SVM models with cross validation for
+        evaluation on a test set to pick the best model. </p>
+      <img src="images/dag.jpg" alt="airflow dag" id="dag_img">
       <p><a href="https://github.com/sfurlow8/Data-Eng-Pipeline-Design/tree/main" target="_blank">Github</a></p>
     </div>
   </div>
 
   <div class="modal-container" id="modal-container-tumor">
     <div class="modal">
-      <button id="close-tumor">x</button>
+      <button id="close-tumor" style="float: right;">x</button>
       <h1>DenseNet Classification of Tumor Images</h1>
-
+      <h2>UC Berkeley, 2024</h2>
+      <p>One team member and I are using images and masks from the NuCLS crowdsourced dataset to train a neural network
+        that classifies slide images of cells into tumors, sTIL cells, and stromal cells.
+        We have written a DenseNet architecture with 6 dense blocks that can learn multiclass and binary classification
+        tasks with up to 85% accuracy on validation sets.
+        We run training and validation for the model with roughly 9 million parameters on a high performance computing
+        cluster. Images like the one shown below are cropped
+        into smaller images containing single nuclei on which the model is trained.</p>
+      <img src="images/dense.jpg" alt="tumor cells in slide" id="dense_img">
     </div>
   </div>
 
@@ -250,7 +262,7 @@
         <li>Deep learning</li>
         <li>PyTorch</li>
         <li>TensorFlow</li>
-        <lit>PySpark, MapReduce</lit>
+        <li>PySpark, MapReduce</li>
         <li>Bioconductor</li>
         <li>Biostatistics</li>
         <li>Genome alignment and genomics</li>
@@ -277,7 +289,7 @@
         <li>Adobe Illustrator</li>
       </ul>
     </section>
-  </section>
+</section>
   </div>
 
   <script src="script.js"></script>
