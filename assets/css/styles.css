@@ -1,4 +1,5 @@
 
+/* Github and LinkedIn icons ------------------------------------------------------------*/
 
 .socials {
     list-style: none;
@@ -8,21 +9,21 @@
 
 .socials li {
     display: inline-block;
-    margin-right: 10px; /* Adjust spacing between icons */
+    margin-right: 10px; 
 }
 
 .socials li:last-child {
-    margin-right: 0; /* Remove margin from the last icon */
+    margin-right: 0; 
 }
 
 .socials a {
     text-decoration: none;
-    color: #461767; /* Default color */
-    font-size: 35px; /* Default size */
+    color: #461767; 
+    font-size: 35px; 
 }
 
 .socials a:hover {
-    color: #461767; /* Change color on hover */
+    color: #461767; /* change color on hover */
     opacity: 0.5;
 }
 
@@ -30,6 +31,8 @@
     color: #461767;
     opacity: 0.5;
 }
+
+/* Headings ------------------------------------------------------------------------*/
 
 h1 {
     font-family: 'Fira Code', monospace;
@@ -54,17 +57,15 @@ body {
     padding: 50px;
 }
 
-/* .container {
-    display: flex;
-} */
+/* Navigation menu ---------------------------------------------------------------------------*/
 
 nav {
     position: fixed;
     background-color: #333;
     color: #fff;
     padding: 20px;
-    width: 200px; /* Set width for the side navigation */
-    margin-left: 250px; /* Width of sidebar + margin */
+    width: 200px; 
+    margin-left: 250px; 
 }
 
 nav a {
@@ -80,9 +81,9 @@ main {
     padding: 20px;
 }
 
-/* section {
-    margin-bottom: 30px;
-} */
+
+/* Sections -------------------------------------------------------------------------------*/
+
 .section {
     display: none;
 }
@@ -136,6 +137,9 @@ main {
     text-decoration: underline;
 }
 
+
+/* Sidebar --------------------------------------------------------------------------------*/
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -150,24 +154,139 @@ main {
 
 .sidebar img {
     width: 200px;
-    height: 200px; /* Ensure equal width and height */
-    object-fit: cover; /* Prevent image distortion */
-    border-radius: 50%; /* Makes the image circular */
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 50%; 
     margin-top: 20px;
     margin-bottom: 5px;
     outline: 5px solid #461767;
-    /*box-shadow: 5px 5px 0px #461767; */ /* Solid offset shadow */
 }
 
 .main-content {
-    margin-left: 250px; /* Width of sidebar + margin */
+    margin-left: 250px; /* width of sidebar + margin */
     padding: 20px;
 }
 
-/* p {
-    margin-bottom: 100px;
-} */
+.contact-button {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    padding: 10px 10px;
+    background-color: #461767;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    border: 3px solid #461767;
+    background-color: #ece7ef;
+    color: #461767;
+}
+
+/* Page preferences ----------------------------------------------------------------------------*/
 
 .conc {
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+}
+
+.modal.show {
+    display: block;
+}
+
+/* .skill_cat {
+    display: flex; 
+    flex-direction: column;
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left; 
+} */
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1; /* Ensure the close button is above the modal content */
+}
+
+.close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Ensure the close button is above the modal content */
+}
+
+.project { /*display project cards in a horizontal list under each subject*/
+    vertical-align: top;
+    margin-inline-end: 20px;
+    display: inline-block;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    border: 3px solid #461767;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 8px 8px #461767;
+}
+
+.project:hover { /*change color of project cards when hovering*/
+    background-color: #ece7ef;
+    box-shadow: 8px 8px #461767;
+}
+

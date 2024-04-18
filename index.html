@@ -1,40 +1,42 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Sophie Furlow - Homepage</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-  </head>
-  
-  <body>
-    <header>
-      <div class="menu">
-        <ul>
-          <li><a href="#" onclick="showSection('aboutme')">About Me</a></li>
-          <li><a href="#" onclick="showSection('education')">Education</a></li>
-          <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-          <li><a href="#" onclick="showSection('skills')">Skills</a></li>
-      </ul>
-      </div>
-    </header>
-    <div class="sidebar">
-      <img src="images/calid.jpg" alt="Sophie Furlow">
-      <h1>Sophie Furlow</h1>
-      <p>Bioengineering Master's student, UC Berkeley</p>
-      <ul class="socials">
-        <li><a href="https://github.com/sfurlow8" target="_blank">
-            <i class="fab fa-github"></i>
-        </a></li>
-        <li><a href="http://www.linkedin.com/in/sophie-furlow" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a></li>
+
+<head>
+  <title>Sophie Furlow - Homepage</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <ul>
+        <li><a href="#" onclick="showSection('aboutme')">About Me</a></li>
+        <li><a href="#" onclick="showSection('education')">Education</a></li>
+        <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+        <li><a href="#" onclick="showSection('skills')">Skills</a></li>
       </ul>
     </div>
+  </header>
+  <div class="sidebar">
+    <img src="images/calid.jpg" alt="Sophie Furlow">
+    <h1>Sophie Furlow</h1>
+    <p>Bioengineering Master's student, UC Berkeley</p>
+    <a href="mailto:sophie_furlow@berkeley.edu" class="contact-button">CONTACT ME</a>
+    <ul class="socials">
+      <li><a href="https://github.com/sfurlow8" target="_blank">
+          <i class="fab fa-github"></i>
+        </a></li>
+      <li><a href="http://www.linkedin.com/in/sophie-furlow" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a></li>
+    </ul>
+  </div>
 
-    <!-- <p>Hi, I'm</p>  
+  <!-- <p>Hi, I'm</p>  
     <h1>Sophie Furlow</h1>
     <p>Bioengineering Master's student, UC Berkeley</p>
     <ul class="socials">
@@ -45,12 +47,12 @@
             <i class="fab fa-linkedin"></i>
         </a></li>
     </ul> -->
-    <!-- <p>I am current MEng student at UC Berkeley, concentrating on Bioinformatics and Computational Biology. 
+  <!-- <p>I am current MEng student at UC Berkeley, concentrating on Bioinformatics and Computational Biology. 
         I'm graduating in May 2024 and am currently searching for full-time industry positions primarily in the Bay Area and Chicago, my hometown. 
         Some of my interests are in genomics, natural language processing (NLP), data engineering, and bioinformatics. 
         Beyond tech, I love to draw, explore cities, and spend time with my dogs. 
         Thanks for visiting! </p> -->
-    <!-- <main>
+  <!-- <main>
         <section id="aboutme">
               <h2>About Me</h2>
               <p>Your biography goes here...</p>
@@ -68,34 +70,142 @@
           <p>Your skills details go here...</p>
         </section>
       </main> -->
-      <div class="main-content">
-        <section id="aboutme" class="section">
-            <h2>About Me</h2>
-            <p>I am a current MEng student at UC Berkeley, concentrating on Bioinformatics and Computational Biology. 
-              I'm graduating in May 2024 and am currently searching for full-time industry positions primarily in the Bay Area and Chicago, my hometown. 
-              Some of my interests are in genomics, natural language processing (NLP), data engineering, and bioinformatics. 
-              Beyond tech, I love to draw, explore cities, and spend time with my dogs. </p> 
-        </section>
-        <section id="education" class="section">
-            <h3 class="school">University of California, Berkeley</h3>
-            <h2 class="degree">Master of Engineering, Bioengineering</h2>
-            <h4>Berkeley, CA. Graduating May 2024.</h4>
-            <p class="conc">Concentration on Bioinformatics and Computational Biology.</p>
-            <h3 class="school">Northwestern University</h3>
-            <h2 class="degree">Bachelor of Science, Biomedical Computation</h2>
-            <h4>Evanston, IL. 2019-2023.</h4>
-            <p>Minor in Data Engineering. Magna Cum Laude Graduate. Tau Beta Pi Engineering Honor Society.</p>
-        </section>
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <p>Your projects details go here...</p>
-        </section>
-        <section id="skills" class="section">
-          <h2>Skills</h2>
-          <p>Your biography goes here...</p>
-        </section>
+  <div class="main-content">
+    <section id="aboutme" class="section">
+      <h2>About Me</h2>
+      <p>I am a current MEng student at UC Berkeley, concentrating on Bioinformatics and Computational Biology.
+        I'm graduating in May 2024 and am currently searching for full-time industry positions primarily in the Bay Area
+        and Chicago, my hometown.
+        Some of my interests are in genomics, natural language processing (NLP), data engineering, and bioinformatics.
+        Beyond tech, I love to draw, explore cities, and spend time with my dogs. </p>
+    </section>
+    <section id="education" class="section">
+      <h3 class="school">University of California, Berkeley</h3>
+      <h2 class="degree">Master of Engineering, Bioengineering</h2>
+      <h4>Berkeley, CA. Graduating May 2024.</h4>
+      <p>Concentration on Bioinformatics and Computational Biology.</p>
+      <p>Relevant coursework:</p>
+      <ul class="conc">
+        <li>computational and functional genomics</li>
+        <li>machine learning and optimization for computational biology</li>
+        <li>natural language processing</li>
+        <li>genome engineering</li>
+        <li>business of healthcare</li>
+        <li>communication for engineering leaders</li>
+      </ul>
+      <h3 class="school">Northwestern University</h3>
+      <h2 class="degree">Bachelor of Science, Biomedical Computation</h2>
+      <h4>Evanston, IL. 2019-2023.</h4>
+      <p>Minor in Data Engineering. Magna Cum Laude Graduate. Tau Beta Pi Engineering Honor Society.</p>
+      <p>Relevant coursework:</p>
+      <ul>
+        <li>optimization</li>
+        <li>statistics and machine learning</li>
+        <li>data structures and algorithms</li>
+        <li>linear algebra & differential equations</li>
+        <li>molecular & cell biology</li>
+        <li>genetics</li>
+      </ul>
+    </section>
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p></p>
+      <div class="project" id="coma">
+        <div class="project-content">
+          <h3>Predicting Coma Recovery with Multimodal Machine Learning</h3>
+          <p>ML, NLP, Python</p>
+        </div>
       </div>
+      <div class="project" id="yeast">
+        <div class="project-content">
+          <h3>Transcriptional Analysis of Stress Responses in Yeast</h3>
+          <p>Unsupervised learning, transcriptomics</p>
+        </div>
+      </div>
+      <div class="project" id="pdscreen">
+        <div class="project-content">
+          <h3>At-Home Screening for Parkinson's Disease</h3>
+          <p>App development</p>
+        </div>
+      </div>
+      <div class="project" id="dataeng">
+        <div class="'project-content">
+          <h3>Data Engineering Pipeline Design</h3>
+          <p>AWS, Airflow, Pyspark, PostgreSQL</p>
+        </div>
+      </div>
+      <div class="project" id="dense">
+        <div class="'project-content">
+          <h3>DenseNet Classification of Tumor Images</h3>
+          <p>DL, image segmentation</p>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <section class="skill_cat">
+        <h3>Languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>R</li>
+          <li>MATLAB</li>
+          <li>SQL</li>
+          <li>Bash scripting</li>
+          <li>HTML</li>
+          <li>Basic C, C++</li>
+        </ul>
+      </section>
+      <section class="skill_cat">
+        <h3>Data science</h3>
+        <ul>
+          <li>Natural Language Processing</li>
+          <li>Machine learning</li>
+          <li>Deep learning</li>
+          <li>PyTorch</li>
+          <li>TensorFlow</li>
+          <li>Bioconductor</li>
+          <li>Biostatistics</li>
+          <li>Genome alignment and genomics</li>
+        </ul>
+      </section>
+      <section class="skill_cat">
+        <h3>Data management</h3>
+        <ul>
+          <li>AWS, Azure, GCP</li>
+          <li>Docker</li>
+          <li>PostgreSQL</li>
+          <li>Airflow</li>
+          <li>Git</li>
+          <li>High performance computing</li>
+        </ul>
+      </section>
+      <section class="skill_cat">
+        <h3>Communication & Creative</h3>
+        <ul>
+          <li>Presentations & public speaking</li>
+          <li>Design methodologies</li>
+          <li>Prototyping</li>
+          <li>Writing</li>
+          <li>Adobe Illustrator</li>
+        </ul>
+      </section>
+    </section>
+  </div>
 
-    <script src="script.js"></script>
-  </body>
+  <div class="overlay" id="overlay" onclick="closeOverlay()"></div>
+  <div class="modal-overlay" id="modal-overlay" onclick="hideDetails()"></div>
+
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modal-content">
+
+      <p>Something for modal content</p>
+      <span class="close" onclick="hideDetails()">&times;</span>
+
+      <button class="close-button" onclick="hideDetails()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
