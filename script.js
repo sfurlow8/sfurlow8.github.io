@@ -51,36 +51,124 @@ document.addEventListener("DOMContentLoaded", function() {
 //     document.getElementById('projectModal').style.display = "none";
 // });
 
-// Get all project boxes
-var projectBoxes = document.querySelectorAll('.project');
+// // Get all project boxes
+// var projectBoxes = document.querySelectorAll('.project');
 
-// Add click event listener to each project box
-projectBoxes.forEach(function(projectBox) {
-    projectBox.addEventListener('click', function() {
-        // Get project details from the clicked project box
-        var projectDetails = projectBox.querySelector('.project-content').innerHTML;
+// // Add click event listener to each project box
+// projectBoxes.forEach(function(projectBox) {
+//     projectBox.addEventListener('click', function() {
+//         // Get project details from the clicked project box
+//         var projectDetails = projectBox.querySelector('.project-content').innerHTML;
         
-        // Display modal with project details
-        showDetails(projectDetails);
-    });
+//         // Display modal with project details
+//         showDetails(projectDetails);
+//     });
+// });
+
+// // Function to display modal with project details
+// function showDetails(projectDetails) {
+//     var modal = document.getElementById('modal');
+//     var overlay = document.getElementById('overlay');
+//     var modalContent = document.getElementById('modal-content');
+
+//     modal.style.display = 'block';
+//     overlay.style.display = 'block';
+//     modalContent.innerHTML = projectDetails;
+// }
+
+// // Function to close modal and overlay
+// function hideDetails() {
+//     var modal = document.getElementById('modal');
+//     var overlay = document.getElementById('overlay');
+
+//     modal.style.display = 'none';
+//     overlay.style.display = 'none';
+// }
+
+// var clickableDivs = document.querySelectorAll('.project');
+// var modal = document.getElementById("myModal");
+// var modalContent = document.getElementById("modalContent");
+
+// // Add click event listener to each div
+// clickableDivs.forEach(function(div) {
+//     div.addEventListener('click', function() {
+//         var content = div.getAttribute('data-content');
+//         showModal(content);
+//     });
+// });
+
+// // Show the modal with specified content
+// function showModal(content) {
+//     modalContent.innerHTML = content;
+//     modal.style.display = "block";
+// }
+
+// // Close the modal when the close button or outside of the modal is clicked
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.style.display = "none";
+//     }
+// }
+// document.getElementsByClassName("close")[0].onclick = function() {
+//     modal.style.display = "none";
+// }
+
+const open_coma = document.getElementById('coma');
+const modal_container_coma = document.getElementById('modal-container-coma');
+const close_coma = document.getElementById('close-coma');
+
+open_coma.addEventListener('click', () => {
+    modal_container_coma.classList.add('show');
 });
 
-// Function to display modal with project details
-function showDetails(projectDetails) {
-    var modal = document.getElementById('modal');
-    var overlay = document.getElementById('overlay');
-    var modalContent = document.getElementById('modal-content');
+close_coma.addEventListener('click', () => {
+    modal_container_coma.classList.remove('show');
+});
 
-    modal.style.display = 'block';
-    overlay.style.display = 'block';
-    modalContent.innerHTML = projectDetails;
-}
+const open_yeast = document.getElementById('yeast');
+const modal_container_yeast = document.getElementById('modal-container-yeast');
+const close_yeast = document.getElementById('close-yeast');
 
-// Function to close modal and overlay
-function hideDetails() {
-    var modal = document.getElementById('modal');
-    var overlay = document.getElementById('overlay');
+open_yeast.addEventListener('click', () => {
+    modal_container_yeast.classList.add('show');
+});
 
-    modal.style.display = 'none';
-    overlay.style.display = 'none';
-}
+close_yeast.addEventListener('click', () => {
+    modal_container_yeast.classList.remove('show');
+});
+
+const open_pd = document.getElementById('pd');
+const modal_container_pd = document.getElementById('modal-container-pd');
+const close_pd = document.getElementById('close-pd');
+
+open_pd.addEventListener('click', () => {
+    modal_container_pd.classList.add('show');
+});
+
+close_pd.addEventListener('click', () => {
+    modal_container_pd.classList.remove('show');
+});
+
+const open_dataeng = document.getElementById('dataeng');
+const modal_container_dataeng = document.getElementById('modal-container-dataeng');
+const close_dataeng = document.getElementById('close-dataeng');
+
+open_dataeng.addEventListener('click', () => {
+    modal_container_dataeng.classList.add('show');
+});
+
+close_dataeng.addEventListener('click', () => {
+    modal_container_dataeng.classList.remove('show');
+});
+
+const open_tumor = document.getElementById('tumor');
+const modal_container_tumor = document.getElementById('modal-container-tumor');
+const close_tumor = document.getElementById('close-tumor');
+
+open_tumor.addEventListener('click', () => {
+    modal_container_tumor.classList.add('show');
+});
+
+close_tumor.addEventListener('click', () => {
+    modal_container_tumor.classList.remove('show');
+});

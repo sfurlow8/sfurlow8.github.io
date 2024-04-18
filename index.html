@@ -78,6 +78,7 @@
         and Chicago, my hometown.
         Some of my interests are in genomics, natural language processing (NLP), data engineering, and bioinformatics.
         Beyond tech, I love to draw, explore cities, and spend time with my dogs. </p>
+      <p>Please feel free to reach out to me at sophie [underscore] furlow [at] berkeley [dot] edu. Thanks!</p>
     </section>
     <section id="education" class="section">
       <h3 class="school">University of California, Berkeley</h3>
@@ -117,15 +118,15 @@
         </div>
       </div>
       <div class="project" id="yeast">
-        <div class="project-content">
+        <div>
           <h3>Transcriptional Analysis of Stress Responses in Yeast</h3>
           <p>Unsupervised learning, transcriptomics</p>
         </div>
       </div>
-      <div class="project" id="pdscreen">
+      <div class="project" id="pd">
         <div class="project-content">
           <h3>At-Home Screening for Parkinson's Disease</h3>
-          <p>App development</p>
+          <p>App development, Swift</p>
         </div>
       </div>
       <div class="project" id="dataeng">
@@ -134,75 +135,149 @@
           <p>AWS, Airflow, Pyspark, PostgreSQL</p>
         </div>
       </div>
-      <div class="project" id="dense">
+      <div class="project" id="tumor">
         <div class="'project-content">
           <h3>DenseNet Classification of Tumor Images</h3>
           <p>DL, image segmentation</p>
         </div>
       </div>
-    </section>
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <section class="skill_cat">
-        <h3>Languages</h3>
-        <ul>
-          <li>Python</li>
-          <li>R</li>
-          <li>MATLAB</li>
-          <li>SQL</li>
-          <li>Bash scripting</li>
-          <li>HTML</li>
-          <li>Basic C, C++</li>
-        </ul>
-      </section>
-      <section class="skill_cat">
-        <h3>Data science</h3>
-        <ul>
-          <li>Natural Language Processing</li>
-          <li>Machine learning</li>
-          <li>Deep learning</li>
-          <li>PyTorch</li>
-          <li>TensorFlow</li>
-          <li>Bioconductor</li>
-          <li>Biostatistics</li>
-          <li>Genome alignment and genomics</li>
-        </ul>
-      </section>
-      <section class="skill_cat">
-        <h3>Data management</h3>
-        <ul>
-          <li>AWS, Azure, GCP</li>
-          <li>Docker</li>
-          <li>PostgreSQL</li>
-          <li>Airflow</li>
-          <li>Git</li>
-          <li>High performance computing</li>
-        </ul>
-      </section>
-      <section class="skill_cat">
-        <h3>Communication & Creative</h3>
-        <ul>
-          <li>Presentations & public speaking</li>
-          <li>Design methodologies</li>
-          <li>Prototyping</li>
-          <li>Writing</li>
-          <li>Adobe Illustrator</li>
-        </ul>
-      </section>
-    </section>
+
+      <div class="modal-container" id="modal-container-coma">
+        <div class="modal">
+          <button id="close-coma">x</button>
+          <h1>Predicting Coma Recovery with Machine Learning of Multimodal Data</h1>
+          <h2>UC Berkeley and UC San Francisco, 2023-2024</h2>
+          <div class="container">
+            <p>The standard of care in ICUs is to observe comatose patients for several days before making treatment
+              decisions, but early action can lead to better recovery outcomes. We are deploying a model trained on
+              historical patients’ neurophysiological data and doctor-written notes to predict the likely recovery
+              outcome of new patients. The prediction is a decision support tool that helps physicians make earlier
+              treatment decisions to help patients reach a higher level of functional independence post-coma. Using
+              Python, we cluster the similarity of brainwave patterns and use natural language processing to correlate
+              keywords in patients’ notes to their likely recovery outcomes.
+            </p>
+            <img src="images/visual_asset.jpg" alt="coma_visual">
+          </div>
+
+          <p><a href="https://github.com/sfurlow8/NLP-of-Medical-Notes" target="_blank">Github</a></p>
+          <p><a href="">Project Brief</a></p>
+        </div>
+      </div>
+
+      <div class="modal-container" id="modal-container-yeast">
+        <div class="modal">
+          <button id="close-yeast">x</button>
+          <h1>Transcriptional Analysis of Stress Responses in Yeast</h1>
+          <h2>Northwestern University and NSF Simons Center for Quantitative Biology, 2021</h2>
+          <p>The goal of the project was to investigate multi-kinase control of environmental stress responsive
+            transcription in yeast. What kinases transmit stress signals and what roles of theirs are contingent on
+            the environment? My research sought to build on research presented in Mace PLOS 2020 that showed how
+            kinases are involved in regulating genes in particular environments.
+            I aligned DESeq transcripts to a yeast reference genome using STAR in a computing cluster. Using GO
+            analysis and further research on the genotypes clustered together in PCA-reduced space, I reasoned that
+            the structure revealed in the PCA plot of the first 2 components forms due to common nucleic acid binding
+            activity.
+          </p>
+          <img src="images/yeast_img.jpg" alt="pdscreen" id="yeast_img">
+          <p><a href="https://github.com/sfurlow8/Transcriptional-Analysis-of-Stress-Responses"
+              target="_blank">Github</a></p>
+        </div>
+      </div>
+
+      <div class="modal-container" id="modal-container-pd">
+        <div class="modal">
+          <button id="close-pd">x</button>
+          <h1>At-Home Screening for Parkinson's Disease</h1>
+          <h2>UC Berkeley, 2024</h2>
+          <div class="container">
+            <p>Here we built PDScreen, a mobile app designed to screen at-risk patients for symptoms of Parkinson's at
+              home. This app prototype combines a questionnaire, speech recognition, finger tapping, and gait analysis.
+              The app is intended to perform parts of the UPDRS (Unified Parkinson’s Disease Rating Scale) screening and
+              relay the information to trained neurologists.
+              The project was developed over a 2-week period as part of the iHackHealth Appathon hosted by UC Berkeley
+              and Apple.
+            </p>
+            <img src="images/pdscreen.jpg" alt="pdscreen" id="pd_img">
+          </div>
+          <p><a href="https://github.com/floriankri/PDScreen_iHackHealth_2024" target="_blank">Github (with app
+              demo)</a></p>
+          <p><a href="images/pd_pitch.pdf" target="_blank">Pitch deck</a></p>
+        </div>
+      </div>
   </div>
 
-  <div class="overlay" id="overlay" onclick="closeOverlay()"></div>
-  <div class="modal-overlay" id="modal-overlay" onclick="hideDetails()"></div>
-
-  <div class="modal" id="modal">
-    <div class="modal-content" id="modal-content">
-
-      <p>Something for modal content</p>
-      <span class="close" onclick="hideDetails()">&times;</span>
-
-      <button class="close-button" onclick="hideDetails()">Close</button>
+  <div class="modal-container" id="modal-container-dataeng">
+    <div class="modal">
+      <button id="close-dataeng">x</button>
+      <h1>Data Engineering Pipeline Design</h1>
+      <h2>Northwestern University, 2023</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cupiditate ad quibusdam? Optio animi, ipsum illo
+        impedit officia dicta, voluptatum tempora nobis sint eum velit vitae! Vitae, libero quo. Soluta!</p>
+      <img src="images/dag.jpg" alt="pdscreen" id="dag_img">
+      <p><a href="https://github.com/sfurlow8/Data-Eng-Pipeline-Design/tree/main" target="_blank">Github</a></p>
     </div>
+  </div>
+
+  <div class="modal-container" id="modal-container-tumor">
+    <div class="modal">
+      <button id="close-tumor">x</button>
+      <h1>DenseNet Classification of Tumor Images</h1>
+
+    </div>
+  </div>
+
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <section class="skill_cat">
+      <h3>Languages</h3>
+      <ul>
+        <li>Python</li>
+        <li>R</li>
+        <li>MATLAB</li>
+        <li>SQL</li>
+        <li>Bash scripting</li>
+        <li>HTML</li>
+        <li>Basic C, C++</li>
+      </ul>
+    </section>
+    <section class="skill_cat">
+      <h3>Data science</h3>
+      <ul>
+        <li>Natural Language Processing</li>
+        <li>Machine learning</li>
+        <li>Deep learning</li>
+        <li>PyTorch</li>
+        <li>TensorFlow</li>
+        <lit>PySpark, MapReduce</lit>
+        <li>Bioconductor</li>
+        <li>Biostatistics</li>
+        <li>Genome alignment and genomics</li>
+      </ul>
+    </section>
+    <section class="skill_cat">
+      <h3>Data management</h3>
+      <ul>
+        <li>AWS, Azure, GCP</li>
+        <li>Docker</li>
+        <li>PostgreSQL</li>
+        <li>Airflow</li>
+        <li>Git</li>
+        <li>High performance computing</li>
+      </ul>
+    </section>
+    <section class="skill_cat">
+      <h3>Communication & Creative</h3>
+      <ul>
+        <li>Presentations & public speaking</li>
+        <li>Design methodologies</li>
+        <li>Prototyping</li>
+        <li>Writing</li>
+        <li>Adobe Illustrator</li>
+      </ul>
+    </section>
+  </section>
   </div>
 
   <script src="script.js"></script>
