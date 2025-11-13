@@ -25,7 +25,8 @@
     <img src="images/calid.jpg" alt="Sophie Furlow">
     <h1>Sophie Furlow</h1>
     <p>Abbott Statistician</p>
-    <p>MEng, Berkeley Bioengineering</p>
+    <p>M.Eng., Berkeley Bioengineering</p>
+    <p>B.S., Northwestern Biomedical Computation</p>
     <a href="mailto:sophiefurlow@gmail.com" class="contact-button">CONTACT ME</a>
     <ul class="socials">
       <li><a href="https://github.com/sfurlow8" target="_blank">
@@ -40,9 +41,16 @@
   <div class="main-content">
     <section id="aboutme" class="section">
       <h2>About Me</h2>
-      <p>I am currently a statistician at Abbott in the Diagnostics division. I recently graduated with an MEng in Bioengineering 
+      <p>I am an engineer by training and am currently a statistician at Abbott in the Diagnostics division. My research focuses
+        on synthetic data generation for privacy-preservation in healthcare, machine learning algorithms forbiomarker diagnosis of 
+        acute conditions, and large-scale data engineering of Electronic Health Records (EHRs).
+      </p>
+        
+        <p>I recently graduated with an MEng in Bioengineering 
         from Berkeley, concentrating on Bioinformatics and Computational Biology. Some of my interests are in genomics, 
-        natural language processing (NLP), data engineering, and bioinformatics.
+        natural language processing (NLP), machine learning for clinical data, and bioinformatics.</p>
+        
+        <p>
         Beyond tech, I love to draw, explore cities, and spend time with my dogs. </p>
       <p>Please feel free to reach out to me at sophiefurlow [at] gmail [dot] com. Thanks!</p>
     </section>
@@ -78,6 +86,18 @@
     <section id="projects" class="section">
       <h2>Projects</h2>
       <p></p>
+      <div class="project" id="synthpop">
+        <div class="project-content">
+          <h3>Evaluation of synthetic data generated from NHANES mortality data</h3>
+          <p>ML, R, conference talk</p>
+        </div>
+      </div>
+      <div class="project" id="scorer">
+        <div class="project-content">
+          <h3>Baseball Scoring App</h3>
+          <p>JavaScript, HTML, Flask</p>
+        </div>
+      </div>
       <div class="project" id="coma">
         <div class="project-content">
           <h3>Predicting Coma Recovery with Multimodal Machine Learning</h3>
@@ -112,9 +132,8 @@
       <div class="modal-container" id="modal-container-synthpop">
         <div class="modal">
           <button id="close-synthpop" style="float: right;">x</button>
-          <h1>Evaluation of synthetic data generated from NHANES mortality data/h1>
+          <h1>Evaluation of synthetic data generated from NHANES mortality data</h1>
           <h2>Abbott Diagnostics, R/Pharma Conference, 2025</h2>
-          <div class="container">
             <p>Synthetic data generation is a powerful tool for data privacy and is emerging as a useful tool in healthcare. 
               At the R/Pharma Conference 2025, I presented a tutorial on synthetic data generation and applications to 
               a conference audience of ~2,000 healthcare and data science professionals. I evaluated the utility and 
@@ -122,9 +141,7 @@
               mortality data using the synthpop package, originally developed for the UK census. The accompanying code and 
               presentation slides with results are available on my Github.
             </p>
-            <img src="images/synthpop_disc.png" alt="disclosure_measures">
-          </div>
-
+            <img src="images/synthpop_disc.png" alt="disclosure_measures" id="disclosure_measures">    
           <p><a href="https://github.com/sfurlow8/synthpop-nhanes-exploration" target="_blank">Github (and slides)</a></p>
           <p><a href="https://www.synthpop.org.uk/" target="_blank">synthpop Website</a></p>
         </div>
@@ -149,6 +166,22 @@
 
           <p><a href="https://github.com/sfurlow8/NLP-of-Medical-Notes" target="_blank">Github</a></p>
           <p><a href="images/brief.pdf" target="_blank">Project brief</a></p>
+        </div>
+      </div>
+
+      <div class="modal-container" id="modal-container-scorer">
+        <div class="modal">
+          <button id="close-scorer" style="float: right;">x</button>
+          <h1>Baseball Scoring App</h1>
+          <h2>Personal project, 2025 (in development)</h2>
+            <p>
+              Ever been to a baseball game and seen someone furiously scribbling something after every play?
+              This app gives users a chance to score baseball games the old-fashioned way with limited knowledge of the game
+              and even less knowledge of scoring. I've "user-tested" it on friends and family and hope others will enjoy it too.
+            </p>
+            <img src="images/scorer_snapshot.png" alt="scorer snapshot" id="scorer_snapshot">    
+          <p><a href="https://github.com/sfurlow8/baseball-scorer" target="_blank">Github</a></p>
+          <p><a href="https://baseball-scorer.onrender.com/login" target="_blank">Web app (hosted on Render)</a></p>
         </div>
       </div>
 
@@ -215,11 +248,11 @@
       <button id="close-tumor" style="float: right;">x</button>
       <h1>DenseNet Classification of Tumor Images</h1>
       <h2>UC Berkeley, 2024</h2>
-      <p>One team member and I are using images and masks from the NuCLS crowdsourced dataset to train a neural network
+      <p>One team member and I used images and masks from the NuCLS crowdsourced dataset to train a neural network
         that classifies slide images of cells into tumors, sTIL cells, and stromal cells.
-        We have written a DenseNet architecture with 6 dense blocks that can learn multiclass and binary classification
+        We wrote a DenseNet architecture with 6 dense blocks that can learn multiclass and binary classification
         tasks with up to 85% accuracy on validation sets.
-        We run training and validation for the model with roughly 9 million parameters on a high performance computing
+        We ran training and validation for the model with roughly 9 million parameters on a high performance computing
         cluster. Images like the one shown below are cropped
         into smaller images containing single nuclei on which the model is trained.</p>
       <img src="images/dense.jpg" alt="tumor cells in slide" id="dense_img">

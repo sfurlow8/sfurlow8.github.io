@@ -76,3 +76,27 @@ open_tumor.addEventListener('click', () => {
 close_tumor.addEventListener('click', () => {
     modal_container_tumor.classList.remove('show');
 });
+
+const open_synthpop = document.getElementById('synthpop');
+const modal_container_synthpop = document.getElementById('modal-container-synthpop');
+const close_synthpop = document.getElementById('close-synthpop');
+
+open_synthpop.addEventListener('click', () => {
+    modal_container_synthpop.classList.add('show');
+});
+
+close_synthpop.addEventListener('click', () => {
+    modal_container_synthpop.classList.remove('show');
+});
+
+const open_scorer = document.getElementById('scorer');
+const modal_container_scorer = document.getElementById('modal-container-scorer');
+const close_scorer = document.getElementById('close-scorer');
+
+open_scorer.addEventListener('click', () => {
+    modal_container_scorer.classList.add('show');
+});
+
+close_scorer.addEventListener('click', () => {
+    modal_container_scorer.classList.remove('show');
+});

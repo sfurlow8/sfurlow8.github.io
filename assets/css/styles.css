@@ -309,6 +309,22 @@ main {
     height: 300px;
 }
 
+#disclosure_measures {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    height: 300px;
+}
+
+#scorer_snapshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    height: 300px;
+}
+
 #dense_img {
     display: block;
     margin-left: auto;
